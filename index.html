@@ -1,534 +1,480 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdallah Gharaibeh — Cybersecurity Specialist portfolio.">
+  <meta name="theme-color" content="#0a0f14">
+  <title>Abdallah Gharaibeh | Cybersecurity Specialist</title>
 
-  <meta name="description" content="Abdallah Gharaibeh — Cybersecurity and Network Security Portfolio">
-  <meta name="theme-color" content="#080d0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <title>Abdallah Gharaibeh | Cybersecurity Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <div class="scanline" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#home">
+    <span class="brand-mark">AG</span>
+    <span>abdallah<span class="brand-dot">.</span>sec</span>
+  </a>
 
-  <!-- HEADER -->
-  <header class="topbar">
+  <nav class="main-nav">
+    <a href="#about" data-en="About" data-ar="نبذة">About</a>
+    <a href="#expertise" data-en="Expertise" data-ar="المجالات">Expertise</a>
+    <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+    <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  </nav>
 
-    <a class="brand" href="#home">
-      <span class="prompt">AG</span>
-      <span>abdallah<span class="accent">.sec</span></span>
-    </a>
+  <div class="header-actions">
+    <button class="lang-toggle" id="languageToggle">عربي</button>
+    <a class="header-cta" href="#contact">Let's connect</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <nav aria-label="Main navigation">
-      <a href="#about" data-en="About" data-ar="نبذة">About</a>
-      <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
-      <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
-      <a href="#links" data-en="Links" data-ar="روابطي">Links</a>
-      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
-    </nav>
+<main>
 
-    <div class="nav-actions">
-      <button id="langToggle" class="small-btn" type="button" aria-label="Switch language">
-        العربية
-      </button>
+<!-- HERO -->
 
-      <a class="github-link"
-         href="https://github.com/abboudissagh-ux"
-         target="_blank"
-         rel="noopener noreferrer">
-        GitHub ↗
+<section class="hero section-wrap" id="home">
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      <span class="status-dot"></span>
+      CYBERSECURITY PORTFOLIO / JORDAN
+    </div>
+
+    <p class="hero-kicker">Hello, I'm</p>
+
+    <h1>
+      Abdallah<br>
+      <span>Gharaibeh</span><b class="cursor">_</b>
+    </h1>
+
+    <h2>Cybersecurity Specialist</h2>
+
+    <p class="hero-lead"
+       data-en="Exploring and building practical skills across security operations, network defense, penetration testing, and digital forensics."
+       data-ar="أطوّر مهارات عملية في العمليات الأمنية وحماية الشبكات واختبار الاختراق والتحقيق الجنائي الرقمي.">
+      Exploring and building practical skills across security operations, network defense, penetration testing, and digital forensics.
+    </p>
+
+    <div class="hero-tags">
+      <span>Network Security</span>
+      <span>Security Operations</span>
+      <span>Digital Forensics</span>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">
+        Explore my work ↗
+      </a>
+
+      <a class="button button-quiet" href="#contact">
+        Get in touch
       </a>
     </div>
 
-  </header>
+    <div class="hero-meta">
+      <span><i></i> Based in Jordan</span>
+      <span class="meta-separator">/</span>
+      <span>Open to learning & opportunities</span>
+    </div>
 
-  <main>
+  </div>
 
-    <!-- HOME -->
-    <section id="home" class="hero wrap">
+  <div class="hero-visual">
 
-      <div class="hero-copy">
+    <div class="visual-topline">
+      <span>PROFILE.SYS</span>
+      <span class="window-dots"><i></i><i></i><i></i></span>
+    </div>
 
-        <!-- PROFILE PHOTO -->
-        <img
-          class="avatar"
-          src="./profile.jpg"
-          alt="Abdallah Gharaibeh profile photo"
-          width="140"
-          height="140"
-          onerror="this.style.display='none';"
-        >
+    <div class="profile-frame">
 
-        <p class="eyebrow">
-          <span class="status-dot"></span>
-          <span data-en="CYBERSECURITY PORTFOLIO // 2026"
-                data-ar="معرض الأمن السيبراني // 2026">
-            CYBERSECURITY PORTFOLIO // 2026
-          </span>
+      <div class="profile-grid"></div>
+
+      <img
+        src="./profile.jpg"
+        alt="Abdallah Gharaibeh"
+        class="profile-photo"
+        onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';"
+      >
+
+      <div class="photo-fallback" id="photoFallback">
+        <span>AG</span>
+        <small>PROFILE IMAGE</small>
+      </div>
+
+      <div class="photo-index">
+        FIG. 01 <span>IDENTITY</span>
+      </div>
+
+      <div class="profile-stamp">
+        <span class="stamp-symbol">⌘</span>
+        <span>SECURITY<br>MINDED</span>
+      </div>
+
+    </div>
+
+    <div class="terminal-card">
+
+      <div class="terminal-head">
+        <span><i></i> abdallah@security: ~</span>
+        <span>•••</span>
+      </div>
+
+      <div class="terminal-body">
+        <p><span class="prompt">➜</span> <span class="cmd">whoami</span></p>
+        <p class="terminal-output">Cybersecurity Specialist</p>
+
+        <p><span class="prompt">➜</span> <span class="cmd">cat focus.txt</span></p>
+        <p class="terminal-output">defense · analysis · investigation</p>
+
+        <p>
+          <span class="prompt">➜</span>
+          <span class="cmd typing-text" id="typingText">learning continuously</span>
+          <span class="terminal-cursor">▌</span>
         </p>
-
-        <h1>
-          <span data-en="Hello, I'm" data-ar="مرحباً، أنا">Hello, I'm</span>
-          <br>
-          <span class="name">
-            Abdallah Gharaibeh<span class="cursor">_</span>
-          </span>
-        </h1>
-
-        <h2
-          data-en="Cybersecurity & Network Security Specialist"
-          data-ar="متخصص في الأمن السيبراني وأمن الشبكات">
-          Cybersecurity &amp; Network Security Specialist
-        </h2>
-
-        <p class="intro"
-           data-en="I explore how systems work, how they fail, and how to make them more secure. This is my space for practical labs, projects, skills, and professional links."
-           data-ar="أهتم بفهم كيفية عمل الأنظمة واكتشاف نقاط ضعفها والعمل على تعزيز أمنها. هنا أشارك مختبراتي العملية ومشاريعي ومهاراتي وروابطي المهنية.">
-          I explore how systems work, how they fail, and how to make them more secure.
-          This is my space for practical labs, projects, skills, and professional links.
-        </p>
-
-        <div class="hero-actions">
-
-          <a class="btn primary"
-             href="#projects"
-             data-en="Explore my work"
-             data-ar="استكشف أعمالي">
-            Explore my work
-          </a>
-
-          <a class="btn secondary"
-             href="#contact"
-             data-en="Get in touch"
-             data-ar="تواصل معي">
-            Get in touch
-          </a>
-
-        </div>
-
       </div>
 
-      <!-- TERMINAL -->
-      <div class="terminal-card" aria-label="Terminal introduction">
+    </div>
 
-        <div class="terminal-head">
-          <span></span>
-          <span></span>
-          <span></span>
-          <small>abdallah@portfolio: ~</small>
-        </div>
+  </div>
 
-        <div class="terminal-body">
+</section>
 
-          <p>
-            <span class="green">abdallah@portfolio</span>:<span class="blue">~</span>$ whoami
-          </p>
+<!-- ABOUT -->
 
-          <p class="output">
-            Cybersecurity enthusiast<br>
-            Network security learner<br>
-            Digital forensics explorer
-          </p>
+<section class="section section-wrap" id="about">
 
-          <p>
-            <span class="green">abdallah@portfolio</span>:<span class="blue">~</span>$ cat focus.txt
-          </p>
+  <div class="section-heading">
+    <p class="section-label">01 / INTRODUCTION</p>
+    <h2>Curious by nature.<br>Security focused.</h2>
+  </div>
 
-          <p class="output">
-            [+] Security operations<br>
-            [+] Network defense<br>
-            [+] Ethical hacking<br>
-            [+] Continuous learning
-          </p>
+  <div class="about-content">
 
-          <p>
-            <span class="green">abdallah@portfolio</span>:<span class="blue">~</span>$
-            <span class="cursor">_</span>
-          </p>
+    <p class="about-lead"
+       data-en="I am a cybersecurity graduate with a background in information and network security. I enjoy understanding how systems work, identifying weaknesses, and learning how to protect digital environments."
+       data-ar="أنا خريج أمن سيبراني ولدي خلفية في أمن المعلومات والشبكات. أستمتع بفهم آلية عمل الأنظمة واكتشاف نقاط الضعف وتعلّم كيفية حماية البيئات الرقمية.">
+      I am a cybersecurity graduate with a background in information and network security. I enjoy understanding how systems work, identifying weaknesses, and learning how to protect digital environments.
+    </p>
 
-        </div>
+    <p class="about-secondary">
+      My learning combines hands-on labs, technical investigation, and structured security fundamentals. I am continuing to develop across defensive security, network analysis, web security, and digital forensics.
+    </p>
+
+    <div class="about-facts">
+
+      <div>
+        <span class="fact-label">EDUCATION</span>
+        <strong>B.Sc. Cybersecurity</strong>
+        <small>Irbid National University · 2023–2024</small>
       </div>
 
-      <div class="hero-grid" aria-hidden="true"></div>
-
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section wrap">
-
-      <div class="section-title">
-        <span>01 //</span>
-        <h2 data-en="About me" data-ar="نبذة عني">About me</h2>
+      <div>
+        <span class="fact-label">DIPLOMA</span>
+        <strong>Information & Network Security</strong>
+        <small>Al-Balqa Applied University · 2021–2022</small>
       </div>
 
-      <div class="about-grid">
+    </div>
 
-        <div class="panel">
+  </div>
 
-          <p class="mono green">$ cat about.txt</p>
+</section>
 
-          <p
-            data-en="I am focused on cybersecurity, network security, and hands-on technical learning. I enjoy working in Linux and Windows environments, investigating security issues, and building practical skills through labs and structured training."
-            data-ar="أركز على الأمن السيبراني وأمن الشبكات والتعلم التقني العملي. أستمتع بالعمل على بيئات Linux وWindows، وتحليل المشكلات الأمنية، وتطوير مهاراتي من خلال المختبرات والتدريب المنظم.">
-            I am focused on cybersecurity, network security, and hands-on technical learning.
-            I enjoy working in Linux and Windows environments, investigating security issues,
-            and building practical skills through labs and structured training.
-          </p>
+<!-- EXPERTISE -->
 
-          <p
-            data-en="My goal is to keep growing as a security professional and contribute to protecting systems, networks, and digital information."
-            data-ar="هدفي هو مواصلة التطور كمتخصص في الأمن السيبراني والمساهمة في حماية الأنظمة والشبكات والمعلومات الرقمية.">
-            My goal is to keep growing as a security professional and contribute to protecting systems,
-            networks, and digital information.
-          </p>
+<section class="section section-wrap expertise-section" id="expertise">
 
-        </div>
+  <div class="section-heading">
+    <p class="section-label">02 / AREAS OF INTEREST</p>
+    <h2>A broad view<br>of cybersecurity.</h2>
+  </div>
 
-        <div class="panel facts">
+  <div class="expertise-grid">
 
-          <div>
-            <span data-en="Education" data-ar="التعليم">Education</span>
-            <strong>B.Sc. Cybersecurity</strong>
-            <small>Irbid National University · 2023–2024</small>
-          </div>
-
-          <div>
-            <span data-en="Diploma" data-ar="الدبلوم">Diploma</span>
-            <strong>Information &amp; Network Security</strong>
-            <small>Al-Balqa Applied University · 2021–2022</small>
-          </div>
-
-          <div>
-            <span data-en="Institution" data-ar="الجامعة">Institution</span>
-            <strong>Irbid National University</strong>
-          </div>
-
-          <div>
-            <span data-en="TryHackMe username" data-ar="اسم المستخدم في TryHackMe">TryHackMe username</span>
-            <strong>abboudissagh-ux</strong>
-          </div>
-
-          <div>
-            <span data-en="Environments" data-ar="الأنظمة">Environments</span>
-            <strong>Linux · Windows · Networks</strong>
-          </div>
-
-        </div>
+    <article class="expertise-card">
+      <div class="card-top">
+        <span class="card-number">01</span>
+        <span class="line-icon">⌁</span>
       </div>
-    </section>
+      <h3>Security Operations</h3>
+      <p>Monitoring, log analysis, alert triage, and security event investigation.</p>
+      <div class="card-tools">Wazuh / SIEM / Logs</div>
+    </article>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section wrap">
-
-      <div class="section-title">
-        <span>02 //</span>
-        <h2 data-en="Skills & toolkit" data-ar="المهارات والأدوات">Skills &amp; toolkit</h2>
+    <article class="expertise-card">
+      <div class="card-top">
+        <span class="card-number">02</span>
+        <span class="line-icon">⌘</span>
       </div>
+      <h3>Penetration Testing</h3>
+      <p>Assessing web applications and identifying security weaknesses in authorized labs.</p>
+      <div class="card-tools">Kali Linux / Nmap / Burp Suite</div>
+    </article>
 
-      <div class="skill-grid">
-
-        <article class="skill panel">
-          <span class="skill-icon">01</span>
-          <h3 data-en="Security fundamentals" data-ar="أساسيات الأمن">Security fundamentals</h3>
-          <p>OWASP · IAAA · Access Control · Vulnerability Assessment</p>
-        </article>
-
-        <article class="skill panel">
-          <span class="skill-icon">02</span>
-          <h3 data-en="Network security" data-ar="أمن الشبكات">Network security</h3>
-          <p>TCP/IP · Nmap · Wireshark · tcpdump · Cisco</p>
-        </article>
-
-        <article class="skill panel">
-          <span class="skill-icon">03</span>
-          <h3 data-en="Operating systems" data-ar="أنظمة التشغيل">Operating systems</h3>
-          <p>Kali Linux · Linux CLI · Windows · Active Directory fundamentals</p>
-        </article>
-
-        <article class="skill panel">
-          <span class="skill-icon">04</span>
-          <h3 data-en="Security operations" data-ar="العمليات الأمنية">Security operations</h3>
-          <p>Wazuh · SIEM concepts · Log analysis · Incident response fundamentals</p>
-        </article>
-
-        <article class="skill panel">
-          <span class="skill-icon">05</span>
-          <h3 data-en="Digital forensics" data-ar="الأدلة الجنائية الرقمية">Digital forensics</h3>
-          <p>Autopsy · FTK concepts · Disk imaging · Evidence integrity</p>
-        </article>
-
-        <article class="skill panel">
-          <span class="skill-icon">06</span>
-          <h3 data-en="Scripting & web" data-ar="البرمجة والويب">Scripting &amp; web</h3>
-          <p>Python basics · HTTP · Burp Suite · Web security testing</p>
-        </article>
-
+    <article class="expertise-card">
+      <div class="card-top">
+        <span class="card-number">03</span>
+        <span class="line-icon">⌖</span>
       </div>
+      <h3>Digital Forensics</h3>
+      <p>Examining digital evidence, disk images, system artifacts, and event records.</p>
+      <div class="card-tools">Autopsy / FTK / Hashing</div>
+    </article>
 
-      <p class="note"
-         data-en="Skills shown here represent areas of study and hands-on practice. Update the list to reflect your current proficiency."
-         data-ar="المهارات المعروضة تمثل مجالات دراسة وتطبيق عملي. حدّث القائمة لتعكس مستوى إتقانك الحالي.">
-        Skills shown here represent areas of study and hands-on practice.
-        Update the list to reflect your current proficiency.
+    <article class="expertise-card">
+      <div class="card-top">
+        <span class="card-number">04</span>
+        <span class="line-icon">⌬</span>
+      </div>
+      <h3>Network Security</h3>
+      <p>Understanding network protocols, traffic behavior, infrastructure, and defensive controls.</p>
+      <div class="card-tools">Wireshark / tcpdump / Cisco</div>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="section section-wrap" id="skills">
+
+  <div class="section-heading">
+    <p class="section-label">03 / TECHNICAL TOOLKIT</p>
+    <h2>Tools I use<br>and continue to learn.</h2>
+  </div>
+
+  <div class="skills-layout">
+
+    <div class="skills-intro">
+      <p>
+        A practical toolkit built through coursework, guided labs, and independent practice.
       </p>
 
-    </section>
+      <div class="skill-note">
+        <span class="note-mark">i</span>
+        <span>Tools listed reflect learning and hands-on practice; proficiency varies by tool.</span>
+      </div>
+    </div>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section wrap">
+    <div class="skill-groups">
 
-      <div class="section-title">
-        <span>03 //</span>
-        <h2 data-en="Projects & labs" data-ar="المشاريع والمختبرات">Projects &amp; labs</h2>
+      <div class="skill-group">
+        <h3>01 <span>NETWORK & TRAFFIC</span></h3>
+        <div class="skill-pills">
+          <span>TCP/IP</span><span>Nmap</span>
+          <span>Wireshark</span><span>tcpdump</span><span>Cisco</span>
+        </div>
       </div>
 
-      <div class="project-grid">
-
-        <article class="project panel">
-
-          <div class="project-top">
-            <span>LAB_001</span>
-            <span class="tag">NETWORK</span>
-          </div>
-
-          <h3 data-en="Network traffic analysis" data-ar="تحليل حركة مرور الشبكة">
-            Network traffic analysis
-          </h3>
-
-          <p
-            data-en="Practice analyzing packet captures and network traffic with Wireshark and tcpdump to understand protocols and identify unusual activity."
-            data-ar="تطبيق عملي على تحليل حزم الشبكة وحركة المرور باستخدام Wireshark وtcpdump لفهم البروتوكولات وملاحظة النشاط غير المعتاد.">
-            Practice analyzing packet captures and network traffic with Wireshark and tcpdump
-            to understand protocols and identify unusual activity.
-          </p>
-
-          <span class="stack">Wireshark · tcpdump</span>
-
-          <a class="project-link"
-             href="https://github.com/abboudissagh-ux"
-             target="_blank"
-             rel="noopener noreferrer"
-             data-en="View GitHub ↗"
-             data-ar="عرض GitHub ↗">
-            View GitHub ↗
-          </a>
-
-        </article>
-
-        <article class="project panel">
-
-          <div class="project-top">
-            <span>LAB_002</span>
-            <span class="tag">BLUE TEAM</span>
-          </div>
-
-          <h3 data-en="Log monitoring & SIEM" data-ar="مراقبة السجلات وSIEM">
-            Log monitoring &amp; SIEM
-          </h3>
-
-          <p
-            data-en="A learning lab exploring security event monitoring, alert review, and investigation workflows using Wazuh."
-            data-ar="مختبر تعليمي لاستكشاف مراقبة الأحداث الأمنية ومراجعة التنبيهات وسير عمل التحقيق باستخدام Wazuh.">
-            A learning lab exploring security event monitoring, alert review,
-            and investigation workflows using Wazuh.
-          </p>
-
-          <span class="stack">Wazuh · Linux · Logs</span>
-
-          <a class="project-link"
-             href="https://github.com/abboudissagh-ux"
-             target="_blank"
-             rel="noopener noreferrer"
-             data-en="View GitHub ↗"
-             data-ar="عرض GitHub ↗">
-            View GitHub ↗
-          </a>
-
-        </article>
-
-        <article class="project panel">
-
-          <div class="project-top">
-            <span>LAB_003</span>
-            <span class="tag">FORENSICS</span>
-          </div>
-
-          <h3 data-en="Digital forensics practice" data-ar="تطبيقات الأدلة الجنائية الرقمية">
-            Digital forensics practice
-          </h3>
-
-          <p
-            data-en="Practice with forensic images, hashes, file-system inspection, and Windows event artifacts in controlled learning environments."
-            data-ar="تدريب على صور الأقراص والبصمات الرقمية وفحص أنظمة الملفات وآثار أحداث Windows ضمن بيئات تعليمية آمنة.">
-            Practice with forensic images, hashes, file-system inspection,
-            and Windows event artifacts in controlled learning environments.
-          </p>
-
-          <span class="stack">Autopsy · MD5 · Windows logs</span>
-
-          <a class="project-link"
-             href="https://github.com/abboudissagh-ux"
-             target="_blank"
-             rel="noopener noreferrer"
-             data-en="View GitHub ↗"
-             data-ar="عرض GitHub ↗">
-            View GitHub ↗
-          </a>
-
-        </article>
-
+      <div class="skill-group">
+        <h3>02 <span>DEFENSIVE SECURITY</span></h3>
+        <div class="skill-pills">
+          <span>Wazuh</span><span>Suricata</span>
+          <span>Log Analysis</span><span>SIEM Fundamentals</span>
+        </div>
       </div>
 
-      <p class="note"
-         data-en="These are starter descriptions based on study areas. Replace them with your own completed work, screenshots, write-ups, and repository links before publishing."
-         data-ar="هذه أوصاف أولية مبنية على مجالات الدراسة. استبدلها بأعمالك المنجزة ولقطات الشاشة والتقارير وروابط المستودعات قبل النشر.">
-        These are starter descriptions based on study areas.
-        Replace them with your own completed work, screenshots, write-ups, and repository links before publishing.
-      </p>
-
-    </section>
-
-    <!-- LINKS -->
-    <section id="links" class="section wrap">
-
-      <div class="section-title">
-        <span>04 //</span>
-        <h2 data-en="Find me online" data-ar="روابطي على الإنترنت">Find me online</h2>
+      <div class="skill-group">
+        <h3>03 <span>WEB & TESTING</span></h3>
+        <div class="skill-pills">
+          <span>Kali Linux</span><span>Burp Suite</span>
+          <span>OWASP</span><span>HTTP</span>
+        </div>
       </div>
 
-      <div class="links-grid">
-
-        <a class="link-card panel"
-           href="https://github.com/abboudissagh-ux"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>GH</span>
-          <div>
-            <strong>GitHub</strong>
-            <small data-en="Code & repositories" data-ar="الأكواد والمستودعات">Code &amp; repositories</small>
-          </div>
-          <b>↗</b>
-        </a>
-
-        <a class="link-card panel"
-           href="https://www.linkedin.com/"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>in</span>
-          <div>
-            <strong>LinkedIn</strong>
-            <small data-en="Professional profile" data-ar="الملف المهني">Professional profile</small>
-          </div>
-          <b>↗</b>
-        </a>
-
-        <a class="link-card panel"
-           href="https://tryhackme.com/p/abboudissagh-ux"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>THM</span>
-          <div>
-            <strong>TryHackMe</strong>
-            <small>abboudissagh-ux · Hands-on learning</small>
-          </div>
-          <b>↗</b>
-        </a>
-
-        <a class="link-card panel"
-           href="https://www.instagram.com/abdallah_j_gharaibeh/"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>IG</span>
-          <div>
-            <strong>Instagram</strong>
-            <small>@abdallah_j_gharaibeh</small>
-          </div>
-          <b>↗</b>
-        </a>
-
-        <a class="link-card panel" href="mailto:your.email@example.com">
-          <span>@</span>
-          <div>
-            <strong>Email</strong>
-            <small data-en="Send me a message" data-ar="أرسل لي رسالة">Send me a message</small>
-          </div>
-          <b>↗</b>
-        </a>
-
+      <div class="skill-group">
+        <h3>04 <span>FORENSICS & SYSTEMS</span></h3>
+        <div class="skill-pills">
+          <span>Autopsy</span><span>Disk Imaging</span>
+          <span>Hashing</span><span>Windows</span>
+          <span>Linux</span><span>Active Directory Fundamentals</span>
+        </div>
       </div>
 
-      <p class="note"
-         data-en="Replace the example LinkedIn URL and email address with your real details."
-         data-ar="استبدل رابط LinkedIn التجريبي وعنوان البريد الإلكتروني ببياناتك الفعلية.">
-        Replace the example LinkedIn URL and email address with your real details.
-      </p>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section wrap contact">
-
-      <div class="section-title">
-        <span>05 //</span>
-        <h2 data-en="Contact" data-ar="تواصل معي">Contact</h2>
+      <div class="skill-group">
+        <h3>05 <span>PROGRAMMING</span></h3>
+        <div class="skill-pills">
+          <span>Python Fundamentals</span>
+          <span>Basic Automation</span>
+          <span>SQL Fundamentals</span>
+        </div>
       </div>
 
-      <div class="contact-box panel">
+    </div>
+  </div>
 
-        <p class="mono green">$ ./initiate_contact.sh</p>
+</section>
 
-        <h3
-          data-en="Have an opportunity or want to connect?"
-          data-ar="هل لديك فرصة أو ترغب بالتواصل؟">
-          Have an opportunity or want to connect?
-        </h3>
+<!-- PROJECTS -->
 
-        <p
-          data-en="I'm open to professional conversations, collaboration, and opportunities to grow in cybersecurity."
-          data-ar="أرحب بالتواصل المهني والتعاون والفرص التي تساعدني على التطور في مجال الأمن السيبراني.">
-          I'm open to professional conversations, collaboration,
-          and opportunities to grow in cybersecurity.
+<section class="section section-wrap projects-section" id="projects">
+
+  <div class="section-heading">
+    <p class="section-label">04 / PRACTICAL WORK</p>
+    <h2>Learning through<br>hands-on practice.</h2>
+  </div>
+
+  <p class="section-intro">
+    Selected learning activities and lab-based investigations. Write-ups and repositories will be added as each project is documented.
+  </p>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-icon">01<span>WEB</span></div>
+      <div>
+        <p class="project-type">WEB APPLICATION SECURITY</p>
+        <h3>OWASP & Web Security Labs</h3>
+        <p>
+          Practicing access control, injection, SSRF, and server-side template injection in authorized training environments.
         </p>
-
-        <a class="btn primary"
-           href="mailto:your.email@example.com"
-           data-en="Email me ↗"
-           data-ar="راسلني ↗">
-          Email me ↗
-        </a>
-
+        <span class="project-status">TRAINING LABS</span>
       </div>
-    </section>
+    </article>
 
-  </main>
+    <article class="project-card">
+      <div class="project-icon">02<span>NET</span></div>
+      <div>
+        <p class="project-type">NETWORK ANALYSIS</p>
+        <h3>Network Reconnaissance & Traffic Analysis</h3>
+        <p>
+          Using Nmap, Wireshark, and tcpdump to explore services, inspect traffic, and understand network behavior.
+        </p>
+        <span class="project-status">PRACTICAL EXERCISES</span>
+      </div>
+    </article>
 
-  <!-- FOOTER -->
-  <footer class="footer wrap">
+    <article class="project-card">
+      <div class="project-icon">03<span>DFIR</span></div>
+      <div>
+        <p class="project-type">DIGITAL FORENSICS</p>
+        <h3>Digital Evidence Examination</h3>
+        <p>
+          Learning evidence acquisition, hash verification, file-system examination, and Windows artifact analysis.
+        </p>
+        <span class="project-status">FORENSICS PRACTICE</span>
+      </div>
+    </article>
 
-    <span>
-      © <span id="year"></span> Abdallah Gharaibeh
-    </span>
+  </div>
 
-    <span
-      data-en="Built with curiosity & a terminal."
-      data-ar="بُني بشغف للتعلم وسطر الأوامر.">
-      Built with curiosity &amp; a terminal.
-    </span>
+  <div class="project-footnote">
+    <span class="status-dot"></span>
+    Project descriptions represent training and lab practice, not client engagements.
+  </div>
 
-    <a href="#home">
-      ↑
-      <span data-en="Back to top" data-ar="العودة للأعلى">Back to top</span>
+</section>
+
+<!-- LINKS -->
+
+<section class="section section-wrap links-section">
+
+  <div class="section-heading">
+    <p class="section-label">05 / ELSEWHERE</p>
+    <h2>Find me<br>online.</h2>
+  </div>
+
+  <div class="link-list">
+
+    <a href="https://github.com/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
+      <span class="link-index">01</span>
+      <span class="link-name">GitHub</span>
+      <span class="link-detail">Code / repositories</span>
+      <span class="link-arrow">↗</span>
     </a>
 
-  </footer>
+    <a href="https://tryhackme.com/p/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
+      <span class="link-index">02</span>
+      <span class="link-name">TryHackMe</span>
+      <span class="link-detail">Hands-on learning</span>
+      <span class="link-arrow">↗</span>
+    </a>
 
-  <script src="script.js"></script>
+    <a href="https://www.instagram.com/abdallah_j_gharaibeh/" target="_blank" rel="noopener noreferrer">
+      <span class="link-index">03</span>
+      <span class="link-name">Instagram</span>
+      <span class="link-detail">Social profile</span>
+      <span class="link-arrow">↗</span>
+    </a>
+
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+      <span class="link-index">04</span>
+      <span class="link-name">LinkedIn</span>
+      <span class="link-detail">Replace with your profile URL</span>
+      <span class="link-arrow">↗</span>
+    </a>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section section-wrap" id="contact">
+
+  <div>
+    <p class="section-label">06 / CONTACT</p>
+
+    <h2>Let's build a<br>more secure future.</h2>
+
+    <p>
+      Interested in cybersecurity, collaboration, or entry-level opportunities?
+      Feel free to connect.
+    </p>
+  </div>
+
+  <div class="contact-terminal">
+
+    <div class="terminal-head">
+      <span><i></i> contact@abdallah</span>
+      <span>READY</span>
+    </div>
+
+    <div class="contact-command">
+      <span class="prompt">$</span> initiate_connection --secure
+    </div>
+
+    <a class="email-link" href="mailto:your.email@example.com">
+      your.email@example.com <span>↗</span>
+    </a>
+
+    <small>Replace this placeholder with your public professional email.</small>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer section-wrap">
+
+  <a class="brand" href="#home">
+    <span class="brand-mark">AG</span>
+    <span>abdallah<span class="brand-dot">.</span>sec</span>
+  </a>
+
+  <p>© <span id="year"></span> Abdallah Gharaibeh. Built with curiosity and a security mindset.</p>
+
+  <a href="#home" class="back-top">BACK TO TOP ↑</a>
+
+</footer>
+
+<script src="./script.js"></script>
 
 </body>
 </html>
