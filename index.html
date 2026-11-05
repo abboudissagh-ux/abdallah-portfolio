@@ -1,480 +1,613 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abdallah Gharaibeh — Cybersecurity Specialist portfolio.">
-  <meta name="theme-color" content="#0a0f14">
-  <title>Abdallah Gharaibeh | Cybersecurity Specialist</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050907">
+    <meta name="description" content="Abdallah Gharaibeh — Cybersecurity Specialist portfolio.">
+    <title>Abdallah Gharaibeh | Cybersecurity Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="background-grid"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
 
-<header class="site-header">
-  <a class="brand" href="#home">
-    <span class="brand-mark">AG</span>
-    <span>abdallah<span class="brand-dot">.</span>sec</span>
-  </a>
+    <div class="app-shell">
+        <aside class="sidebar glass-panel">
+            <a class="brand" href="#home" aria-label="Go to home">
+                <span class="brand-symbol">⌘</span>
+                <span class="brand-name">CYBER<span>SEC</span></span>
+                <small>PERSONAL PORTFOLIO</small>
+            </a>
 
-  <nav class="main-nav">
-    <a href="#about" data-en="About" data-ar="نبذة">About</a>
-    <a href="#expertise" data-en="Expertise" data-ar="المجالات">Expertise</a>
-    <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
-    <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
-    <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
-  </nav>
+            <div class="sidebar-label">NAVIGATION</div>
+            <nav class="side-nav" aria-label="Section navigation">
+                <button class="nav-link active" data-section="home">
+                    <span class="nav-icon">⌂</span><span>Home</span>
+                </button>
+                <button class="nav-link" data-section="profile">
+                    <span class="nav-icon">◉</span><span>Profile</span>
+                </button>
+                <button class="nav-link" data-section="expertise">
+                    <span class="nav-icon">⌘</span><span>Expertise</span>
+                </button>
+                <button class="nav-link" data-section="education">
+                    <span class="nav-icon">▤</span><span>Education</span>
+                </button>
+                <button class="nav-link" data-section="work">
+                    <span class="nav-icon">▣</span><span>Practical Work</span>
+                </button>
+                <button class="nav-link" data-section="links">
+                    <span class="nav-icon">↗</span><span>Links</span>
+                </button>
+                <button class="nav-link" data-section="contact">
+                    <span class="nav-icon">✉</span><span>Contact</span>
+                </button>
+            </nav>
 
-  <div class="header-actions">
-    <button class="lang-toggle" id="languageToggle">عربي</button>
-    <a class="header-cta" href="#contact">Let's connect</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
-      <span></span><span></span>
-    </button>
-  </div>
-</header>
+            <div class="sidebar-bottom">
+                <div class="system-card">
+                    <div class="system-heading">
+                        <span class="status-dot"></span>
+                        <span>SYSTEM STATUS</span>
+                    </div>
+                    <div class="system-status">PORTFOLIO ONLINE</div>
+                    <div class="system-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    <small>BUILD • DEFEND • SECURE</small>
+                </div>
+                <div class="sidebar-version">SECURITY PROFILE <span>v1.0</span></div>
+            </div>
+        </aside>
 
-<main>
+        <main class="main-area">
+            <header class="topbar glass-panel">
+                <div class="breadcrumb">
+                    <span class="breadcrumb-mark">/</span>
+                    <span>PORTFOLIO</span>
+                    <span class="breadcrumb-separator">/</span>
+                    <strong id="current-page">HOME</strong>
+                </div>
 
-<!-- HERO -->
+                <nav class="top-nav" aria-label="Quick navigation">
+                    <button class="top-link active" data-section="home">Home</button>
+                    <button class="top-link" data-section="profile">Profile</button>
+                    <button class="top-link" data-section="expertise">Expertise</button>
+                    <button class="top-link" data-section="work">Work</button>
+                    <button class="top-link" data-section="contact">Contact</button>
+                </nav>
 
-<section class="hero section-wrap" id="home">
+                <a class="top-contact" href="mailto:abboudissagh@gmail.com">
+                    <span class="status-dot"></span> LET'S CONNECT
+                </a>
+            </header>
 
-  <div class="hero-copy">
+            <div class="mobile-section-nav">
+                <button class="mobile-nav-link active" data-section="home">Home</button>
+                <button class="mobile-nav-link" data-section="profile">Profile</button>
+                <button class="mobile-nav-link" data-section="expertise">Expertise</button>
+                <button class="mobile-nav-link" data-section="education">Education</button>
+                <button class="mobile-nav-link" data-section="work">Work</button>
+                <button class="mobile-nav-link" data-section="links">Links</button>
+                <button class="mobile-nav-link" data-section="contact">Contact</button>
+            </div>
 
-    <div class="eyebrow">
-      <span class="status-dot"></span>
-      CYBERSECURITY PORTFOLIO / JORDAN
+            <div class="workspace">
+                <div class="workspace-heading">
+                    <div>
+                        <span class="eyebrow"><span class="status-dot"></span> CYBERSECURITY PROFILE</span>
+                        <h1 id="section-heading">Welcome to my <span>digital space.</span></h1>
+                    </div>
+                    <div class="slide-counter">
+                        <span id="slide-current">01</span><i></i><span>07</span>
+                    </div>
+                </div>
+
+                <div class="deck" id="deck">
+
+                    <!-- HOME -->
+                    <section class="slide active" id="home" data-title="HOME">
+                        <div class="hero-grid">
+                            <article class="hero-card glass-panel">
+                                <div class="hero-glow"></div>
+                                <div class="hero-content">
+                                    <div class="hero-copy">
+                                        <span class="eyebrow">CYBERSECURITY SPECIALIST</span>
+                                        <h2>Abdallah<br><span>Gharaibeh</span></h2>
+                                        <p class="hero-role">Cybersecurity &amp; Network Security Specialist</p>
+                                        <p class="hero-description">
+                                            Focused on cybersecurity, network defense, penetration testing,
+                                            security operations, and digital investigations.
+                                            Building practical skills to understand threats and help protect
+                                            digital environments.
+                                        </p>
+                                        <div class="hero-actions">
+                                            <button class="button button-primary" data-go="work">EXPLORE MY WORK <span>↗</span></button>
+                                            <button class="button button-outline" data-go="contact">CONTACT ME</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="hero-visual">
+                                        <div class="orbit orbit-one"></div>
+                                        <div class="orbit orbit-two"></div>
+                                        <div class="orbit orbit-three"></div>
+                                        <div class="profile-frame">
+                                            <img src="profile.jpeg" alt="Abdallah Gharaibeh profile photo"
+                                                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+                                            <div class="profile-fallback">AG</div>
+                                        </div>
+                                        <div class="visual-tag"><span class="status-dot"></span> SECURITY MINDED</div>
+                                    </div>
+                                </div>
+                                <div class="hero-footer">
+                                    <span>BASED IN JORDAN</span>
+                                    <span>CYBERSECURITY • NETWORK SECURITY</span>
+                                    <span>AVAILABLE FOR OPPORTUNITIES</span>
+                                </div>
+                            </article>
+
+                            <aside class="side-stack">
+                                <div class="mini-card glass-panel">
+                                    <span class="mini-label">PRACTICAL EXPERIENCE</span>
+                                    <strong>02<span>+</span></strong>
+                                    <small>Years of hands-on experience</small>
+                                    <div class="mini-line"></div>
+                                </div>
+                                <div class="mini-card glass-panel">
+                                    <span class="mini-label">TECHNICAL DOMAINS</span>
+                                    <strong>08</strong>
+                                    <small>Cybersecurity skill areas</small>
+                                    <div class="mini-line"></div>
+                                </div>
+                                <div class="mini-card glass-panel">
+                                    <span class="mini-label">EDUCATION</span>
+                                    <strong>02</strong>
+                                    <small>Academic qualifications</small>
+                                    <div class="mini-line"></div>
+                                </div>
+                            </aside>
+                        </div>
+
+                        <div class="home-bottom-grid">
+                            <article class="info-card glass-panel">
+                                <div class="card-heading">
+                                    <div><span class="eyebrow">01 / INTRODUCTION</span><h3>Professional Profile</h3></div>
+                                    <span class="card-symbol">◈</span>
+                                </div>
+                                <p>
+                                    Cybersecurity professional with practical exposure to penetration testing,
+                                    network security, threat response, Cisco technologies, and Linux and
+                                    Windows environments.
+                                </p>
+                                <button class="text-link" data-go="profile">VIEW PROFILE <span>→</span></button>
+                            </article>
+
+                            <article class="info-card glass-panel">
+                                <div class="card-heading">
+                                    <div><span class="eyebrow">02 / TECHNICAL AREAS</span><h3>Core Expertise</h3></div>
+                                    <span class="card-symbol">⌘</span>
+                                </div>
+                                <div class="tag-list">
+                                    <span>Offensive Security</span><span>Security Operations</span>
+                                    <span>Network Security</span><span>Digital Forensics</span>
+                                    <span>Web &amp; API Security</span>
+                                </div>
+                                <button class="text-link" data-go="expertise">EXPLORE SKILLS <span>→</span></button>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- PROFILE -->
+                    <section class="slide" id="profile" data-title="PROFILE">
+                        <div class="section-intro">
+                            <span class="eyebrow">01 / ABOUT ME</span>
+                            <h2>Professional <span>Profile</span></h2>
+                            <p>Cybersecurity, technical curiosity, and a practical approach to security.</p>
+                        </div>
+                        <div class="profile-layout">
+                            <article class="profile-main glass-panel">
+                                <div class="profile-heading">
+                                    <div class="profile-monogram">AG</div>
+                                    <div>
+                                        <span class="eyebrow">CYBERSECURITY SPECIALIST</span>
+                                        <h3>Abdallah Gharaibeh</h3>
+                                        <p>Jordan · Cybersecurity &amp; Network Security</p>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <h4>ABOUT</h4>
+                                <p>
+                                    I work across cybersecurity and network security, with hands-on exposure
+                                    to penetration testing, vulnerability assessment, security monitoring,
+                                    threat investigation, and system administration.
+                                </p>
+                                <p>
+                                    My technical interests include offensive security, blue-team operations,
+                                    web and API security, digital forensics, and information security
+                                    frameworks. I value practical investigation, clear documentation, and
+                                    continuous technical development.
+                                </p>
+                                <div class="profile-facts">
+                                    <div><small>LOCATION</small><strong>Jordan</strong></div>
+                                    <div><small>FOCUS</small><strong>Cybersecurity</strong></div>
+                                    <div><small>ENVIRONMENTS</small><strong>Linux / Windows</strong></div>
+                                </div>
+                            </article>
+                            <aside class="profile-side">
+                                <div class="glass-panel focus-card">
+                                    <span class="eyebrow">CAREER FOCUS</span>
+                                    <h3>Security<br><span>in practice.</span></h3>
+                                    <ul>
+                                        <li>Identify security weaknesses</li>
+                                        <li>Analyze network activity</li>
+                                        <li>Investigate security events</li>
+                                        <li>Understand digital evidence</li>
+                                        <li>Apply security controls</li>
+                                    </ul>
+                                </div>
+                                <div class="glass-panel quote-card">
+                                    <span class="quote-mark">“</span>
+                                    <p>Understand the threat. Strengthen the defense. Protect the system.</p>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+
+                    <!-- EXPERTISE -->
+                    <section class="slide" id="expertise" data-title="EXPERTISE">
+                        <div class="section-intro">
+                            <span class="eyebrow">02 / TECHNICAL EXPERTISE</span>
+                            <h2>Skills &amp; <span>Technologies</span></h2>
+                            <p>Cybersecurity technologies, methodologies, tools, and technical capabilities.</p>
+                        </div>
+
+                        <div class="skills-grid">
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">⌘</span><span class="skill-index">01</span></div>
+                                <h3>Offensive Security</h3>
+                                <p>Security testing and vulnerability discovery.</p>
+                                <div class="skill-tags">
+                                    <span>Penetration Testing</span><span>Vulnerability Assessment</span>
+                                    <span>Reconnaissance</span><span>Network Enumeration</span>
+                                    <span>Web Application Security</span><span>Exploitation</span>
+                                    <span>Privilege Escalation</span><span>OWASP Top 10</span>
+                                    <span>SQL Injection</span><span>Cross-Site Scripting (XSS)</span>
+                                    <span>Server-Side Template Injection</span><span>Command Injection</span>
+                                    <span>API Security Testing</span><span>Authentication Testing</span>
+                                    <span>Access Control Testing</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">◉</span><span class="skill-index">02</span></div>
+                                <h3>Security Operations</h3>
+                                <p>Monitoring, detection, and incident investigation.</p>
+                                <div class="skill-tags">
+                                    <span>Security Monitoring</span><span>SIEM Analysis</span>
+                                    <span>Threat Detection</span><span>Log Analysis</span>
+                                    <span>Incident Investigation</span><span>Incident Response</span>
+                                    <span>Alert Analysis</span><span>Intrusion Detection</span>
+                                    <span>Authentication Event Analysis</span>
+                                    <span>Security Event Correlation</span>
+                                    <span>Endpoint Security</span><span>Threat Intelligence</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">⌁</span><span class="skill-index">03</span></div>
+                                <h3>Network Security</h3>
+                                <p>Network protocols, analysis, and infrastructure.</p>
+                                <div class="skill-tags">
+                                    <span>TCP/IP</span><span>OSI Model</span><span>Network Scanning</span>
+                                    <span>Port Scanning</span><span>Network Enumeration</span>
+                                    <span>Packet Analysis</span><span>Traffic Analysis</span>
+                                    <span>DNS</span><span>HTTP/HTTPS</span><span>ICMP</span>
+                                    <span>NAT</span><span>Firewall Concepts</span>
+                                    <span>Cisco Networking</span><span>SSH</span>
+                                    <span>Network Troubleshooting</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">⌕</span><span class="skill-index">04</span></div>
+                                <h3>Digital Forensics</h3>
+                                <p>Evidence acquisition, preservation, and investigation.</p>
+                                <div class="skill-tags">
+                                    <span>Digital Forensics</span><span>Disk Imaging</span>
+                                    <span>Evidence Acquisition</span><span>Evidence Preservation</span>
+                                    <span>File System Analysis</span><span>Hash Verification</span>
+                                    <span>MD5</span><span>Windows Registry Analysis</span>
+                                    <span>Windows Event Log Analysis</span>
+                                    <span>Authentication Artifacts</span>
+                                    <span>Timeline Analysis</span>
+                                    <span>Digital Evidence Investigation</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">▣</span><span class="skill-index">05</span></div>
+                                <h3>Systems &amp; Infrastructure</h3>
+                                <p>Operating systems, services, and administration.</p>
+                                <div class="skill-tags">
+                                    <span>Kali Linux</span><span>Linux Administration</span>
+                                    <span>Windows Administration</span><span>Windows Security</span>
+                                    <span>Active Directory</span><span>User &amp; Group Management</span>
+                                    <span>Access Control</span><span>Linux Permissions</span>
+                                    <span>Linux Services</span><span>Windows Registry</span>
+                                    <span>Apache</span><span>Nginx</span><span>IIS</span>
+                                    <span>SSH Authentication</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">⌘</span><span class="skill-index">06</span></div>
+                                <h3>Web &amp; API Security</h3>
+                                <p>Web traffic, application behavior, and API testing.</p>
+                                <div class="skill-tags">
+                                    <span>HTTP Request Analysis</span><span>HTTP Response Analysis</span>
+                                    <span>HTTP Headers</span><span>Cookies &amp; Sessions</span>
+                                    <span>REST APIs</span><span>API Endpoint Testing</span>
+                                    <span>JSON</span><span>URL Encoding</span>
+                                    <span>Web Server Analysis</span><span>Client-Side Security</span>
+                                    <span>Server-Side Security</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">&lt;/&gt;</span><span class="skill-index">07</span></div>
+                                <h3>Programming &amp; Automation</h3>
+                                <p>Scripting, automation, and web technologies.</p>
+                                <div class="skill-tags">
+                                    <span>Python</span><span>Python Requests</span>
+                                    <span>Regular Expressions</span><span>Argument Parsing</span>
+                                    <span>Bash Scripting</span><span>Linux Shell</span>
+                                    <span>Security Automation</span><span>HTML</span>
+                                    <span>CSS</span><span>JavaScript</span>
+                                    <span>JSON Data Handling</span>
+                                </div>
+                            </article>
+
+                            <article class="skill-card glass-panel">
+                                <div class="skill-card-top"><span class="skill-icon">◇</span><span class="skill-index">08</span></div>
+                                <h3>Information Security &amp; GRC</h3>
+                                <p>Security frameworks, controls, and governance.</p>
+                                <div class="skill-tags">
+                                    <span>ISO/IEC 27001:2022</span><span>ISO/IEC 27701</span>
+                                    <span>ISMS</span><span>Governance</span>
+                                    <span>Risk &amp; Compliance</span><span>Risk Assessment</span>
+                                    <span>Security Controls</span><span>Security Auditing</span>
+                                    <span>Identity &amp; Access Management</span>
+                                    <span>Authentication</span><span>Authorization</span>
+                                    <span>Single Sign-On (SSO)</span>
+                                    <span>Multi-Factor Authentication</span><span>CIA Triad</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="tool-strip glass-panel">
+                            <span class="eyebrow">TOOLS &amp; PLATFORMS</span>
+                            <div class="tool-logos">
+                                <span><img src="https://cdn.simpleicons.org/kalilinux/557C94" alt="">Kali Linux</span>
+                                <span><img src="https://cdn.simpleicons.org/wireshark/1679A7" alt="">Wireshark</span>
+                                <span><img src="https://cdn.simpleicons.org/burpsuite/FF6633" alt="">Burp Suite</span>
+                                <span><img src="https://cdn.simpleicons.org/python/3776AB" alt="">Python</span>
+                                <span><img src="https://cdn.simpleicons.org/linux/FCC624" alt="">Linux</span>
+                                <span><img src="https://cdn.simpleicons.org/nmap/4EAA25" alt="">Nmap</span>
+                                <span><img src="https://cdn.simpleicons.org/wazuh/4B8BBE" alt="">Wazuh</span>
+                                <span><img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="">Cisco</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- EDUCATION -->
+                    <section class="slide" id="education" data-title="EDUCATION">
+                        <div class="section-intro">
+                            <span class="eyebrow">03 / ACADEMIC BACKGROUND</span>
+                            <h2>Education &amp; <span>Development</span></h2>
+                            <p>Academic qualifications supporting my cybersecurity background.</p>
+                        </div>
+                        <div class="education-timeline">
+                            <article class="education-card glass-panel">
+                                <div class="education-marker">01</div>
+                                <div class="education-content">
+                                    <span class="eyebrow">BACHELOR'S DEGREE · 2023–2024</span>
+                                    <h3>B.Sc. Cybersecurity</h3>
+                                    <p class="institution">Irbid National University</p>
+                                    <p>Academic study in cybersecurity and related technical disciplines.</p>
+                                </div>
+                                <span class="education-status">ACADEMIC QUALIFICATION</span>
+                            </article>
+                            <article class="education-card glass-panel">
+                                <div class="education-marker">02</div>
+                                <div class="education-content">
+                                    <span class="eyebrow">DIPLOMA · 2021–2022</span>
+                                    <h3>Diploma in Information &amp; Network Security</h3>
+                                    <p class="institution">Al-Balqa Applied University</p>
+                                    <p>Academic foundation in information security and networking.</p>
+                                </div>
+                                <span class="education-status">ACADEMIC QUALIFICATION</span>
+                            </article>
+                        </div>
+                        <article class="development-card glass-panel">
+                            <div>
+                                <span class="eyebrow">CONTINUOUS DEVELOPMENT</span>
+                                <h3>Technical learning &amp; security practice</h3>
+                                <p>Practical labs, security exercises, and ongoing development across offensive security, blue-team operations, and digital forensics.</p>
+                            </div>
+                            <div class="development-tags"><span>TryHackMe</span><span>Hands-on Labs</span><span>Security Research</span></div>
+                        </article>
+                        <article class="framework-note glass-panel">
+                            <span class="eyebrow">FRAMEWORK KNOWLEDGE</span>
+                            <h3>ISO/IEC 27001:2022 · ISO/IEC 27701</h3>
+                            <p>Information security management, privacy information management, risk, and security controls.</p>
+                            <small>Listed as areas of knowledge, not as certification claims.</small>
+                        </article>
+                    </section>
+
+                    <!-- PRACTICAL WORK -->
+                    <section class="slide" id="work" data-title="PRACTICAL WORK">
+                        <div class="section-intro">
+                            <span class="eyebrow">04 / HANDS-ON EXPERIENCE</span>
+                            <h2>Practical <span>Work</span></h2>
+                            <p>Technical areas explored through labs, exercises, and hands-on security practice.</p>
+                        </div>
+                        <div class="work-grid">
+                            <article class="work-card glass-panel">
+                                <div class="work-number">01</div>
+                                <div class="work-icon">⌘</div>
+                                <span class="eyebrow">OFFENSIVE SECURITY</span>
+                                <h3>Web Security Testing</h3>
+                                <p>Exploring web application weaknesses, authentication, access control, and common OWASP vulnerability classes.</p>
+                                <div class="work-tags"><span>Burp Suite</span><span>OWASP</span><span>SQLi</span><span>XSS</span></div>
+                            </article>
+                            <article class="work-card glass-panel">
+                                <div class="work-number">02</div>
+                                <div class="work-icon">⌁</div>
+                                <span class="eyebrow">NETWORK SECURITY</span>
+                                <h3>Network Analysis</h3>
+                                <p>Network discovery, service enumeration, packet inspection, and analysis of network traffic.</p>
+                                <div class="work-tags"><span>Nmap</span><span>Wireshark</span><span>tcpdump</span><span>Cisco</span></div>
+                            </article>
+                            <article class="work-card glass-panel">
+                                <div class="work-number">03</div>
+                                <div class="work-icon">⌕</div>
+                                <span class="eyebrow">DIGITAL FORENSICS</span>
+                                <h3>Digital Investigation</h3>
+                                <p>Evidence acquisition concepts, disk imaging, hash verification, Windows artifacts, and event log analysis.</p>
+                                <div class="work-tags"><span>Autopsy</span><span>MD5</span><span>Windows Logs</span><span>Forensics</span></div>
+                            </article>
+                            <article class="work-card glass-panel">
+                                <div class="work-number">04</div>
+                                <div class="work-icon">◉</div>
+                                <span class="eyebrow">BLUE TEAM</span>
+                                <h3>Security Monitoring</h3>
+                                <p>Working with security alerts, log analysis, intrusion detection concepts, and investigation workflows.</p>
+                                <div class="work-tags"><span>Wazuh</span><span>Suricata</span><span>SIEM</span><span>Logs</span></div>
+                            </article>
+                            <article class="work-card glass-panel">
+                                <div class="work-number">05</div>
+                                <div class="work-icon">▣</div>
+                                <span class="eyebrow">SYSTEMS &amp; INFRASTRUCTURE</span>
+                                <h3>System Administration</h3>
+                                <p>Working with Linux and Windows environments, services, permissions, users, and authentication.</p>
+                                <div class="work-tags"><span>Linux</span><span>Windows</span><span>Active Directory</span><span>SSH</span></div>
+                            </article>
+                            <article class="work-card glass-panel">
+                                <div class="work-number">06</div>
+                                <div class="work-icon">&lt;/&gt;</div>
+                                <span class="eyebrow">PROGRAMMING</span>
+                                <h3>Security Scripting</h3>
+                                <p>Using Python, shell commands, and scripting concepts to support technical tasks and security workflows.</p>
+                                <div class="work-tags"><span>Python</span><span>Bash</span><span>Requests</span><span>Automation</span></div>
+                            </article>
+                        </div>
+                        <div class="work-disclaimer glass-panel">
+                            <span class="status-dot"></span>
+                            <p>These cards describe practical learning and technical areas. They are not presented as client engagements or commercial projects.</p>
+                        </div>
+                    </section>
+
+                    <!-- LINKS -->
+                    <section class="slide" id="links" data-title="PROFESSIONAL LINKS">
+                        <div class="section-intro">
+                            <span class="eyebrow">05 / ONLINE PRESENCE</span>
+                            <h2>Professional <span>Links</span></h2>
+                            <p>Explore my profiles and cybersecurity learning activity.</p>
+                        </div>
+                        <div class="links-grid">
+                            <a class="link-card glass-panel" href="https://github.com/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
+                                <div class="link-icon"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt=""></div>
+                                <div><span class="eyebrow">CODE &amp; PROJECTS</span><h3>GitHub</h3><p>Repositories, code, and technical work.</p><strong>OPEN PROFILE ↗</strong></div>
+                            </a>
+                            <a class="link-card glass-panel" href="https://tryhackme.com/p/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
+                                <div class="link-icon"><img src="https://cdn.simpleicons.org/tryhackme/FFFFFF" alt=""></div>
+                                <div><span class="eyebrow">CYBERSECURITY TRAINING</span><h3>TryHackMe</h3><p>Hands-on cybersecurity labs and learning.</p><strong>VIEW PROFILE ↗</strong></div>
+                            </a>
+                            <a class="link-card glass-panel" href="https://www.instagram.com/abdallah_j_gharaibeh/" target="_blank" rel="noopener noreferrer">
+                                <div class="link-icon"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt=""></div>
+                                <div><span class="eyebrow">SOCIAL PROFILE</span><h3>Instagram</h3><p>Connect with me on Instagram.</p><strong>VISIT PROFILE ↗</strong></div>
+                            </a>
+                        </div>
+                        <div class="links-footer glass-panel">
+                            <span class="eyebrow">CONNECT PROFESSIONALLY</span>
+                            <h3>Let's build a safer digital environment.</h3>
+                            <button class="button button-primary" data-go="contact">GET IN TOUCH <span>→</span></button>
+                        </div>
+                    </section>
+
+                    <!-- CONTACT -->
+                    <section class="slide" id="contact" data-title="CONTACT">
+                        <div class="section-intro">
+                            <span class="eyebrow">06 / GET IN TOUCH</span>
+                            <h2>Let's <span>Connect</span></h2>
+                            <p>Open to cybersecurity opportunities, professional collaboration, and technical discussions.</p>
+                        </div>
+                        <div class="contact-layout">
+                            <article class="contact-main glass-panel">
+                                <span class="eyebrow">CONTACT CHANNELS</span>
+                                <h3>Have an opportunity<br><span>or a question?</span></h3>
+                                <p>Feel free to reach out through any of the channels below.</p>
+                                <div class="contact-options">
+                                    <a class="contact-option" href="https://wa.me/962772376383" target="_blank" rel="noopener noreferrer">
+                                        <span class="contact-icon"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt=""></span>
+                                        <span><small>WHATSAPP</small><strong>+962 77 237 6383</strong></span>
+                                        <b>↗</b>
+                                    </a>
+                                    <a class="contact-option" href="mailto:abboudissagh@gmail.com">
+                                        <span class="contact-icon"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt=""></span>
+                                        <span><small>EMAIL</small><strong>abboudissagh@gmail.com</strong></span>
+                                        <b>↗</b>
+                                    </a>
+                                    <a class="contact-option" href="https://www.instagram.com/abdallah_j_gharaibeh/" target="_blank" rel="noopener noreferrer">
+                                        <span class="contact-icon"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt=""></span>
+                                        <span><small>INSTAGRAM</small><strong>@abdallah_j_gharaibeh</strong></span>
+                                        <b>↗</b>
+                                    </a>
+                                </div>
+                            </article>
+                            <aside class="contact-side">
+                                <div class="contact-orb glass-panel">
+                                    <div class="orb-rings"><span>AG</span></div>
+                                    <span class="eyebrow">CYBERSECURITY SPECIALIST</span>
+                                    <h3>Abdallah Gharaibeh</h3>
+                                    <p>Jordan</p>
+                                    <div class="contact-status"><span class="status-dot"></span> OPEN TO CONNECTIONS</div>
+                                </div>
+                                <div class="contact-note glass-panel">
+                                    <span class="eyebrow">MISSION</span>
+                                    <p>Understand. Protect. Improve.</p>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+                </div>
+
+                <footer class="footer">
+                    <span>© <span id="year"></span> ABDALLAH GHARAIBEH</span>
+                    <span class="footer-center">CYBERSECURITY TODAY. A SAFER TOMORROW.</span>
+                    <span><i class="status-dot"></i> PORTFOLIO ONLINE</span>
+                </footer>
+
+                <div class="deck-controls">
+                    <button class="arrow-button" id="previous-slide" aria-label="Previous section">←</button>
+                    <div class="slide-dots" id="slide-dots">
+                        <button class="slide-dot active" data-index="0" aria-label="Go to Home"></button>
+                        <button class="slide-dot" data-index="1" aria-label="Go to Profile"></button>
+                        <button class="slide-dot" data-index="2" aria-label="Go to Expertise"></button>
+                        <button class="slide-dot" data-index="3" aria-label="Go to Education"></button>
+                        <button class="slide-dot" data-index="4" aria-label="Go to Practical Work"></button>
+                        <button class="slide-dot" data-index="5" aria-label="Go to Links"></button>
+                        <button class="slide-dot" data-index="6" aria-label="Go to Contact"></button>
+                    </div>
+                    <button class="arrow-button" id="next-slide" aria-label="Next section">→</button>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <p class="hero-kicker">Hello, I'm</p>
-
-    <h1>
-      Abdallah<br>
-      <span>Gharaibeh</span><b class="cursor">_</b>
-    </h1>
-
-    <h2>Cybersecurity Specialist</h2>
-
-    <p class="hero-lead"
-       data-en="Exploring and building practical skills across security operations, network defense, penetration testing, and digital forensics."
-       data-ar="أطوّر مهارات عملية في العمليات الأمنية وحماية الشبكات واختبار الاختراق والتحقيق الجنائي الرقمي.">
-      Exploring and building practical skills across security operations, network defense, penetration testing, and digital forensics.
-    </p>
-
-    <div class="hero-tags">
-      <span>Network Security</span>
-      <span>Security Operations</span>
-      <span>Digital Forensics</span>
-    </div>
-
-    <div class="hero-actions">
-      <a class="button button-primary" href="#projects">
-        Explore my work ↗
-      </a>
-
-      <a class="button button-quiet" href="#contact">
-        Get in touch
-      </a>
-    </div>
-
-    <div class="hero-meta">
-      <span><i></i> Based in Jordan</span>
-      <span class="meta-separator">/</span>
-      <span>Open to learning & opportunities</span>
-    </div>
-
-  </div>
-
-  <div class="hero-visual">
-
-    <div class="visual-topline">
-      <span>PROFILE.SYS</span>
-      <span class="window-dots"><i></i><i></i><i></i></span>
-    </div>
-
-    <div class="profile-frame">
-
-      <div class="profile-grid"></div>
-
-      <img
-        src="./profile.jpg"
-        alt="Abdallah Gharaibeh"
-        class="profile-photo"
-        onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';"
-      >
-
-      <div class="photo-fallback" id="photoFallback">
-        <span>AG</span>
-        <small>PROFILE IMAGE</small>
-      </div>
-
-      <div class="photo-index">
-        FIG. 01 <span>IDENTITY</span>
-      </div>
-
-      <div class="profile-stamp">
-        <span class="stamp-symbol">⌘</span>
-        <span>SECURITY<br>MINDED</span>
-      </div>
-
-    </div>
-
-    <div class="terminal-card">
-
-      <div class="terminal-head">
-        <span><i></i> abdallah@security: ~</span>
-        <span>•••</span>
-      </div>
-
-      <div class="terminal-body">
-        <p><span class="prompt">➜</span> <span class="cmd">whoami</span></p>
-        <p class="terminal-output">Cybersecurity Specialist</p>
-
-        <p><span class="prompt">➜</span> <span class="cmd">cat focus.txt</span></p>
-        <p class="terminal-output">defense · analysis · investigation</p>
-
-        <p>
-          <span class="prompt">➜</span>
-          <span class="cmd typing-text" id="typingText">learning continuously</span>
-          <span class="terminal-cursor">▌</span>
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="section section-wrap" id="about">
-
-  <div class="section-heading">
-    <p class="section-label">01 / INTRODUCTION</p>
-    <h2>Curious by nature.<br>Security focused.</h2>
-  </div>
-
-  <div class="about-content">
-
-    <p class="about-lead"
-       data-en="I am a cybersecurity graduate with a background in information and network security. I enjoy understanding how systems work, identifying weaknesses, and learning how to protect digital environments."
-       data-ar="أنا خريج أمن سيبراني ولدي خلفية في أمن المعلومات والشبكات. أستمتع بفهم آلية عمل الأنظمة واكتشاف نقاط الضعف وتعلّم كيفية حماية البيئات الرقمية.">
-      I am a cybersecurity graduate with a background in information and network security. I enjoy understanding how systems work, identifying weaknesses, and learning how to protect digital environments.
-    </p>
-
-    <p class="about-secondary">
-      My learning combines hands-on labs, technical investigation, and structured security fundamentals. I am continuing to develop across defensive security, network analysis, web security, and digital forensics.
-    </p>
-
-    <div class="about-facts">
-
-      <div>
-        <span class="fact-label">EDUCATION</span>
-        <strong>B.Sc. Cybersecurity</strong>
-        <small>Irbid National University · 2023–2024</small>
-      </div>
-
-      <div>
-        <span class="fact-label">DIPLOMA</span>
-        <strong>Information & Network Security</strong>
-        <small>Al-Balqa Applied University · 2021–2022</small>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- EXPERTISE -->
-
-<section class="section section-wrap expertise-section" id="expertise">
-
-  <div class="section-heading">
-    <p class="section-label">02 / AREAS OF INTEREST</p>
-    <h2>A broad view<br>of cybersecurity.</h2>
-  </div>
-
-  <div class="expertise-grid">
-
-    <article class="expertise-card">
-      <div class="card-top">
-        <span class="card-number">01</span>
-        <span class="line-icon">⌁</span>
-      </div>
-      <h3>Security Operations</h3>
-      <p>Monitoring, log analysis, alert triage, and security event investigation.</p>
-      <div class="card-tools">Wazuh / SIEM / Logs</div>
-    </article>
-
-    <article class="expertise-card">
-      <div class="card-top">
-        <span class="card-number">02</span>
-        <span class="line-icon">⌘</span>
-      </div>
-      <h3>Penetration Testing</h3>
-      <p>Assessing web applications and identifying security weaknesses in authorized labs.</p>
-      <div class="card-tools">Kali Linux / Nmap / Burp Suite</div>
-    </article>
-
-    <article class="expertise-card">
-      <div class="card-top">
-        <span class="card-number">03</span>
-        <span class="line-icon">⌖</span>
-      </div>
-      <h3>Digital Forensics</h3>
-      <p>Examining digital evidence, disk images, system artifacts, and event records.</p>
-      <div class="card-tools">Autopsy / FTK / Hashing</div>
-    </article>
-
-    <article class="expertise-card">
-      <div class="card-top">
-        <span class="card-number">04</span>
-        <span class="line-icon">⌬</span>
-      </div>
-      <h3>Network Security</h3>
-      <p>Understanding network protocols, traffic behavior, infrastructure, and defensive controls.</p>
-      <div class="card-tools">Wireshark / tcpdump / Cisco</div>
-    </article>
-
-  </div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section class="section section-wrap" id="skills">
-
-  <div class="section-heading">
-    <p class="section-label">03 / TECHNICAL TOOLKIT</p>
-    <h2>Tools I use<br>and continue to learn.</h2>
-  </div>
-
-  <div class="skills-layout">
-
-    <div class="skills-intro">
-      <p>
-        A practical toolkit built through coursework, guided labs, and independent practice.
-      </p>
-
-      <div class="skill-note">
-        <span class="note-mark">i</span>
-        <span>Tools listed reflect learning and hands-on practice; proficiency varies by tool.</span>
-      </div>
-    </div>
-
-    <div class="skill-groups">
-
-      <div class="skill-group">
-        <h3>01 <span>NETWORK & TRAFFIC</span></h3>
-        <div class="skill-pills">
-          <span>TCP/IP</span><span>Nmap</span>
-          <span>Wireshark</span><span>tcpdump</span><span>Cisco</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>02 <span>DEFENSIVE SECURITY</span></h3>
-        <div class="skill-pills">
-          <span>Wazuh</span><span>Suricata</span>
-          <span>Log Analysis</span><span>SIEM Fundamentals</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>03 <span>WEB & TESTING</span></h3>
-        <div class="skill-pills">
-          <span>Kali Linux</span><span>Burp Suite</span>
-          <span>OWASP</span><span>HTTP</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>04 <span>FORENSICS & SYSTEMS</span></h3>
-        <div class="skill-pills">
-          <span>Autopsy</span><span>Disk Imaging</span>
-          <span>Hashing</span><span>Windows</span>
-          <span>Linux</span><span>Active Directory Fundamentals</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>05 <span>PROGRAMMING</span></h3>
-        <div class="skill-pills">
-          <span>Python Fundamentals</span>
-          <span>Basic Automation</span>
-          <span>SQL Fundamentals</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section class="section section-wrap projects-section" id="projects">
-
-  <div class="section-heading">
-    <p class="section-label">04 / PRACTICAL WORK</p>
-    <h2>Learning through<br>hands-on practice.</h2>
-  </div>
-
-  <p class="section-intro">
-    Selected learning activities and lab-based investigations. Write-ups and repositories will be added as each project is documented.
-  </p>
-
-  <div class="project-grid">
-
-    <article class="project-card">
-      <div class="project-icon">01<span>WEB</span></div>
-      <div>
-        <p class="project-type">WEB APPLICATION SECURITY</p>
-        <h3>OWASP & Web Security Labs</h3>
-        <p>
-          Practicing access control, injection, SSRF, and server-side template injection in authorized training environments.
-        </p>
-        <span class="project-status">TRAINING LABS</span>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="project-icon">02<span>NET</span></div>
-      <div>
-        <p class="project-type">NETWORK ANALYSIS</p>
-        <h3>Network Reconnaissance & Traffic Analysis</h3>
-        <p>
-          Using Nmap, Wireshark, and tcpdump to explore services, inspect traffic, and understand network behavior.
-        </p>
-        <span class="project-status">PRACTICAL EXERCISES</span>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="project-icon">03<span>DFIR</span></div>
-      <div>
-        <p class="project-type">DIGITAL FORENSICS</p>
-        <h3>Digital Evidence Examination</h3>
-        <p>
-          Learning evidence acquisition, hash verification, file-system examination, and Windows artifact analysis.
-        </p>
-        <span class="project-status">FORENSICS PRACTICE</span>
-      </div>
-    </article>
-
-  </div>
-
-  <div class="project-footnote">
-    <span class="status-dot"></span>
-    Project descriptions represent training and lab practice, not client engagements.
-  </div>
-
-</section>
-
-<!-- LINKS -->
-
-<section class="section section-wrap links-section">
-
-  <div class="section-heading">
-    <p class="section-label">05 / ELSEWHERE</p>
-    <h2>Find me<br>online.</h2>
-  </div>
-
-  <div class="link-list">
-
-    <a href="https://github.com/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
-      <span class="link-index">01</span>
-      <span class="link-name">GitHub</span>
-      <span class="link-detail">Code / repositories</span>
-      <span class="link-arrow">↗</span>
-    </a>
-
-    <a href="https://tryhackme.com/p/abboudissagh-ux" target="_blank" rel="noopener noreferrer">
-      <span class="link-index">02</span>
-      <span class="link-name">TryHackMe</span>
-      <span class="link-detail">Hands-on learning</span>
-      <span class="link-arrow">↗</span>
-    </a>
-
-    <a href="https://www.instagram.com/abdallah_j_gharaibeh/" target="_blank" rel="noopener noreferrer">
-      <span class="link-index">03</span>
-      <span class="link-name">Instagram</span>
-      <span class="link-detail">Social profile</span>
-      <span class="link-arrow">↗</span>
-    </a>
-
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-      <span class="link-index">04</span>
-      <span class="link-name">LinkedIn</span>
-      <span class="link-detail">Replace with your profile URL</span>
-      <span class="link-arrow">↗</span>
-    </a>
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact-section section-wrap" id="contact">
-
-  <div>
-    <p class="section-label">06 / CONTACT</p>
-
-    <h2>Let's build a<br>more secure future.</h2>
-
-    <p>
-      Interested in cybersecurity, collaboration, or entry-level opportunities?
-      Feel free to connect.
-    </p>
-  </div>
-
-  <div class="contact-terminal">
-
-    <div class="terminal-head">
-      <span><i></i> contact@abdallah</span>
-      <span>READY</span>
-    </div>
-
-    <div class="contact-command">
-      <span class="prompt">$</span> initiate_connection --secure
-    </div>
-
-    <a class="email-link" href="mailto:abboudissagh@gmail.com">
-    abboudissagh@gmail.com <span>↗</span>
-</a>
-
-    <small>Replace this placeholder with your public professional email.</small>
-
-  </div>
-
-</section>
-
-</main>
-
-<footer class="site-footer section-wrap">
-
-  <a class="brand" href="#home">
-    <span class="brand-mark">AG</span>
-    <span>abdallah<span class="brand-dot">.</span>sec</span>
-  </a>
-
-  <p>© <span id="year"></span> Abdallah Gharaibeh. Built with curiosity and a security mindset.</p>
-
-  <a href="#home" class="back-top">BACK TO TOP ↑</a>
-
-</footer>
-
-<script src="./script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
