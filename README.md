@@ -23,3 +23,4 @@ Open `index.html` in your browser. No build tools are required.
 - `index.html` — page content and sections
 - `style.css` — responsive terminal-inspired styling
 - `script.js` — English/Arabic language switch and current year
+- GitHub Pages deployment restart - November 2026.
